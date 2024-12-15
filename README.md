@@ -1,2 +1,2 @@
 # ProjektnaNaloga2-NikeSwoosh
-Projektna naloga v zvezi z canvasi.
+Projektna naloga v zvezi z Bezierjevimi krivuljami.
