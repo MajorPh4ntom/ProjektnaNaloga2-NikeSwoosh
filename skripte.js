@@ -48,7 +48,7 @@ window.onload = function() {
     var ctx = canvas.getContext('2d');
     var colorPicker = document.getElementById('color-picker');
 
-    // Set initial color to white
+    // zacetna barva je bela
     var currentColor = "#FFFFFF";  
     colorPicker.value = "#FFFFFF"; // Preset the color picker to white
 
@@ -67,10 +67,10 @@ window.onload = function() {
     });
 };
 
-// Select all size buttons
+// zberi use "sizeButtons"
 const sizeButtons = document.querySelectorAll('.sizes button');
 
-// Function to handle the click event
+// skrbi za klick event
 sizeButtons.forEach(button => {
     button.addEventListener('click', () => {
         // Remove the black border from all buttons
@@ -81,12 +81,11 @@ sizeButtons.forEach(button => {
     });
 });
 
-// Select the "Add to Bag" button
+// zberi add-to-bag
 const addToBagButton = document.querySelector('.add-to-bag');
 
-// Add a click event listener to the button
+// dodaj klick event
 addToBagButton.addEventListener('click', () => {
-    // Show SweetAlert2 popup
     Swal.fire({
         title: 'Success!',
         text: 'The item has been added to your bag.',
@@ -96,6 +95,6 @@ addToBagButton.addEventListener('click', () => {
             title: 'my-title',
             htmlContainer: 'my-text',
             confirmButton: 'my-confirm-button'
-        } // Correctly close the customClass object
+        } 
     });
 });
