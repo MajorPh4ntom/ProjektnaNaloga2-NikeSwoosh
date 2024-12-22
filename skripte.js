@@ -49,8 +49,8 @@ window.onload = function() {
     var colorPicker = document.getElementById('color-picker');
 
     // zacetna barva je bela
-    var currentColor = "#FFFFFF";  
-    colorPicker.value = "#FFFFFF"; // Preset the color picker to white
+    var currentColor = "#000000";  
+    colorPicker.value = "#000000"; 
 
     function drawLogo() {
         ctx.clearRect(0, 0, canvas.width, canvas.height); 
@@ -73,10 +73,7 @@ const sizeButtons = document.querySelectorAll('.sizes button');
 // skrbi za klick event
 sizeButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Remove the black border from all buttons
         sizeButtons.forEach(btn => btn.style.border = '1px solid #ddd');
-        
-        // Add the black border to the clicked button
         button.style.border = '2px solid black';
     });
 });
