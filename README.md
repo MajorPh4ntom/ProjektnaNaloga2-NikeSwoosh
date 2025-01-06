@@ -1,4 +1,4 @@
-# ProjektnaNaloga2-NikeSwoosh
+# Bezerijeve krivulje - NIKE
 Projektna naloga v zvezi z Bezierjevimi krivuljami.
 
 Ta naloga predstavlja spletno stran za promocijo in nakup čevljev **Nike Air Force 1**. Na strani lahko uporabniki: 
