@@ -1,4 +1,4 @@
-var SVGIcons = {
+ var SVGIcons = {
     "nikeLogo": {
         draw: function(ctx, color) {
             ctx.save();
