@@ -298,6 +298,10 @@ footer p {
         font-size: 15px;
         padding: 14px 18px;
     }
+
+    .nike-logo {
+        padding-bottom: 15px;
+    }
 }
 
 @media (min-width: 1025px) {
