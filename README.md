@@ -10,10 +10,15 @@ Ta naloga predstavlja spletno stran za promocijo in nakup čevljev **Nike Air Fo
 
 # Slike:
 **Slika 1 (Head)**
+
 ![Posnetek zaslona 2025-01-06 093556](https://github.com/user-attachments/assets/2333741a-6cfc-4ebe-bf9e-c4a8a2fff224)
 
+
 **Slika 2 (Body)**
+
 ![Posnetek zaslona 2025-01-06 093339](https://github.com/user-attachments/assets/b44b1663-cb5a-4594-a7f4-d465b66e2cd7)
 
+
 **Slika 3 (Footer)**
+
 ![Posnetek zaslona 2025-01-06 093652](https://github.com/user-attachments/assets/cf8b2170-d7b1-4d56-9b9d-784d70d2d15d)
