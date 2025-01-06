@@ -2,7 +2,7 @@
 Projektna naloga v zvezi z Bezierjevimi krivuljami.
 
 Ta naloga predstavlja spletno stran za promocijo in nakup čevljev **Nike Air Force 1**. Na strani lahko uporabniki: 
-
+ 
 1. **Pregledujejo galerijo slik izdelka** – vključuje glavne slike in sličice za podrobnejši vpogled.
 2. **Prilagajajo barvo logotipa Nike** na interaktivnem platnu z uporabo barvnega izbirnika.
 3. **Izberejo velikost čevlja** iz ponujenih gumbov, kjer izbrana velikost dobi poudarjeno obrobo.
