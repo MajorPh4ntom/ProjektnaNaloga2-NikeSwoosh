@@ -67,36 +67,31 @@ window.onload = function() {
     });
 };
 
-// Track selected size
+// sledi velikostim
 let selectedSize = null;
 
-// Gather all size buttons
+// vse vilkosti
 const sizeButtons = document.querySelectorAll('.sizes button');
 
-// Handle size button clicks
+// ce kliknes dogodki na gumbih
 sizeButtons.forEach(button => {
     button.addEventListener('click', () => {
-        if (button.style.border === '2px solid black') {
-            // If this size button is already selected, deselect it
+        if (button.style.border === '2px solid black') { // select pa deselect
             button.style.border = '1px solid #ddd';
-            selectedSize = null; // Deselect the size
         } else {
-            // Reset borders for all size buttons
             sizeButtons.forEach(btn => btn.style.border = '1px solid #ddd');
-            // Select the clicked button
             button.style.border = '2px solid black';
             selectedSize = button.textContent; // Store the selected size
         }
     });
 });
 
-// Gather the "Add to Bag" button
+
 const addToBagButton = document.querySelector('.add-to-bag');
 
-// Handle the "Add to Bag" button click
+
 addToBagButton.addEventListener('click', () => {
     if (!selectedSize) {
-        // Show SweetAlert if no size is selected
         Swal.fire({
             title: 'Oops!',
             text: 'Please pick a size first.',
@@ -109,7 +104,6 @@ addToBagButton.addEventListener('click', () => {
             }
         })
     } else {
-        // Show success message if size is selected
         Swal.fire({
             title: 'Success!',
             text: `The item with size ${selectedSize} has been added to your bag.`,
@@ -124,27 +118,23 @@ addToBagButton.addEventListener('click', () => {
     }
 });
 
-// Select the main image and thumbnail gallery
+
 const mainImage = document.querySelector('.main-image');
 const thumbnails = document.querySelectorAll('.thumbnail-gallery img');
 
-// Function to handle thumbnail clicks
+//fade-in fade-out efeckt
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', () => {
-        // Add fade-out class
         mainImage.classList.add('fade-out');
 
-        // Change the main image after the fade-out transition
         setTimeout(() => {
             mainImage.src = thumbnail.src;
-            // Add fade-in class
             mainImage.classList.add('fade-in');
-        }, 300); // Match this with the CSS transition duration
+        }, 300);
 
-        // Remove fade-out and fade-in classes after the transition
         setTimeout(() => {
             mainImage.classList.remove('fade-out', 'fade-in');
-        }, 600); // Twice the transition duration for smoother effect
+        }, 600);
     });
 });
 
@@ -153,11 +143,9 @@ const mainImg = document.querySelector('.main-image');
 
 magnifyContainer.addEventListener('mousemove', (event) => {
     const rect = magnifyContainer.getBoundingClientRect();
-    const x = event.clientX - rect.left; // Mouse X position within container
-    const y = event.clientY - rect.top; // Mouse Y position within container
-    const xPercent = (x / rect.width) * 100; // Convert to percentage
-    const yPercent = (y / rect.height) * 100; // Convert to percentage
-
-    mainImg.style.transformOrigin = `${xPercent}% ${yPercent}%`; // Set zoom origin
+    const x = event.clientX - rect.left; // x pozicvija
+    const y = event.clientY - rect.top; // y pozicija
+    const xPercent = (x / rect.width) * 100; // v procentih
+    const yPercent = (y / rect.height) * 100; // v procentih
+    mainImg.style.transformOrigin = `${xPercent}% ${yPercent}%`; // zoomiras v sliko 
 });
-// ne dela fade in fade out pa border heaca
