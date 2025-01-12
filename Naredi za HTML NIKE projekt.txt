@@ -1,4 +1,0 @@
-Naredi za HTML NIKE projekt:
-
-1. Onclick se cevlj zamenja na glavni sliki
-2. premakni canvas ali svg na cevelj ter da bo color change

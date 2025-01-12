@@ -24,9 +24,11 @@
     <main>
         <section class="product-page">
             <div class="product-images">
-                <img src="img/AirForceWhite.png" alt="Nike Air Force 1 Main View" class="main-image">
+                <div class="magnify-container">
+                    <img src="img/AirForceWhite.png" alt="Nike Air Force 1 Main View" class="main-image">
+                </div>
                 <div class="thumbnail-gallery">
-                    <img src="img/airforce-thumbnail1.png" alt="Nike Air Force Thumbnail 1">
+                    <img src="img/AirForceWhite.png" alt="Nike Air Force Thumbnail 1">
                     <img src="img/airforce-thumbnail2.png" alt="Nike Air Force Thumbnail 2">
                     <img src="img/airforce-thumbnail3.png" alt="Nike Air Force Thumbnail 3">
                     <img src="img/airforce-thumbnail4.png" alt="Nike Air Force Thumbnail 4">
@@ -34,14 +36,15 @@
             </div>
 
             <div class="product-details">
-                <div class="color-picker-container">
-                    <label for="color-picker">Pick a color for the Nike Swoosh:</label>
-                    <input type="color" id="color-picker" value="#000000">
+                
+
+                <div class="canvas-and-title">
+                    <span class="canvas-container">
+                        <canvas id="canvas" width="70px" height="60px"></canvas>
+                    </span>
+                    <h1>Nike Air Force 1 '07</h1><input type="color" id="color-picker" value="#000000">
                 </div>
-                <div class="canvas-container" style="display: inline;">
-                    <canvas id="canvas" width="70px" height="60px" style="margin-left: 5vw; margin-top: -2vh;"></canvas>
-                </div>
-                <h1>Nike Air Force 1 '07</h1>
+
                 <p class="price">€119.99</p>
                 <p class="description">Classic style, premium comfort. The Nike Air Force 1 '07 features crisp leather, legendary Air cushioning, and an iconic design that never goes out of fashion.</p>
 
@@ -79,13 +82,11 @@
             </div>
             <p>Explore the new Nike AirForce collection.</p>
             <div>
-                <?xml version="1.0" encoding="UTF-8"?>
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="70" viewBox="135.5 361.38 1000 356.39">
-                <path d="M245.8075 717.62406c-29.79588-1.1837-54.1734-9.3368-73.23459-24.4796-3.63775-2.8928-12.30611-11.5663-15.21427-15.2245-7.72958-9.7193-12.98467-19.1785-16.48977-29.6734-10.7857-32.3061-5.23469-74.6989 15.87753-121.2243 18.0765-39.8316 45.96932-79.3366 94.63252-134.0508 7.16836-8.0511 28.51526-31.5969 28.65302-31.5969.051 0-1.11225 2.0153-2.57652 4.4694-12.65304 21.1938-23.47957 46.158-29.37751 67.7703-9.47448 34.6785-8.33163 64.4387 3.34693 87.5151 8.05611 15.898 21.86731 29.6684 37.3979 37.2806 27.18874 13.3214 66.9948 14.4235 115.60699 3.2245 3.34694-.7755 169.19363-44.801 368.55048-97.8366 199.35686-53.0408 362.49439-96.4029 362.51989-96.3672.056.046-463.16259 198.2599-703.62654 301.0914-38.08158 16.2806-48.26521 20.3928-66.16827 26.6785-45.76525 16.0714-86.76008 23.7398-119.89779 22.4235z" fill="white"/>
+                    <path d="M245.8075 717.62406c-29.79588-1.1837-54.1734-9.3368-73.23459-24.4796-3.63775-2.8928-12.30611-11.5663-15.21427-15.2245-7.72958-9.7193-12.98467-19.1785-16.48977-29.6734-10.7857-32.3061-5.23469-74.6989 15.87753-121.2243 18.0765-39.8316 45.96932-79.3366 94.63252-134.0508 7.16836-8.0511 28.51526-31.5969 28.65302-31.5969.051 0-1.11225 2.0153-2.57652 4.4694-12.65304 21.1938-23.47957 46.158-29.37751 67.7703-9.47448 34.6785-8.33163 64.4387 3.34693 87.5151 8.05611 15.898 21.86731 29.6684 37.3979 37.2806 27.18874 13.3214 66.9948 14.4235 115.60699 3.2245 3.34694-.7755 169.19363-44.801 368.55048-97.8366 199.35686-53.0408 362.49439-96.4029 362.51989-96.3672.056.046-463.16259 198.2599-703.62654 301.0914-38.08158 16.2806-48.26521 20.3928-66.16827 26.6785-45.76525 16.0714-86.76008 23.7398-119.89779 22.4235z" fill="white" />
                 </svg>
             </div>
         </div>
-        
     </footer>
 
     <script src="skripte.js"></script>

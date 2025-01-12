@@ -123,3 +123,41 @@ addToBagButton.addEventListener('click', () => {
         })
     }
 });
+
+// Select the main image and thumbnail gallery
+const mainImage = document.querySelector('.main-image');
+const thumbnails = document.querySelectorAll('.thumbnail-gallery img');
+
+// Function to handle thumbnail clicks
+thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+        // Add fade-out class
+        mainImage.classList.add('fade-out');
+
+        // Change the main image after the fade-out transition
+        setTimeout(() => {
+            mainImage.src = thumbnail.src;
+            // Add fade-in class
+            mainImage.classList.add('fade-in');
+        }, 300); // Match this with the CSS transition duration
+
+        // Remove fade-out and fade-in classes after the transition
+        setTimeout(() => {
+            mainImage.classList.remove('fade-out', 'fade-in');
+        }, 600); // Twice the transition duration for smoother effect
+    });
+});
+
+const magnifyContainer = document.querySelector('.magnify-container');
+const mainImg = document.querySelector('.main-image');
+
+magnifyContainer.addEventListener('mousemove', (event) => {
+    const rect = magnifyContainer.getBoundingClientRect();
+    const x = event.clientX - rect.left; // Mouse X position within container
+    const y = event.clientY - rect.top; // Mouse Y position within container
+    const xPercent = (x / rect.width) * 100; // Convert to percentage
+    const yPercent = (y / rect.height) * 100; // Convert to percentage
+
+    mainImg.style.transformOrigin = `${xPercent}% ${yPercent}%`; // Set zoom origin
+});
+// ne dela fade in fade out pa border heaca

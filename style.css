@@ -1,3 +1,21 @@
+/*
+
+    Style za JavaScript
+
+*/
+
+/* Fade-out effect */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -91,8 +109,21 @@ main {
     width: 100%;
     max-width: 400px;
     height: auto;
+}
+
+.magnify-container {
+    position: relative;
+    overflow: hidden;
+    height: auto;
     border: 1px solid #ddd;
     border-radius: 10px;
+    background-color: #f6f6f6;
+}
+
+.magnify-container:hover .main-image {
+    transform: scale(2); /* Adjust the scale factor for zoom level */
+    transform-origin: center; /* Center the zoom effect */
+    cursor: zoom-in;
 }
 
 .thumbnail-gallery {
@@ -121,9 +152,21 @@ main {
     gap: 20px;
 }
 
+.canvas-and-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.canvas-container {
+    display: inline-block; 
+}
+
 h1 {
     font-size: 28px;
     color: #111;
+    margin: 0; 
 }
 
 .price {
