@@ -8,6 +8,8 @@ Ta naloga predstavlja spletno stran za promocijo in nakup čevljev **Nike Air Fo
 3. **Izberejo velikost čevlja** iz ponujenih gumbov, kjer izbrana velikost dobi poudarjeno obrobo.
 4. **Dodajo izdelek v košarico** – ob tem se prikaže obvestilo o uspešnem dodajanju s pomočjo animiranega pop-up okna (SweetAlert2).
 
+
+
    **Novo:**
    1. Premik swoosh krivulje ob naslovu čevlja (ni na čevlju, ker se ne pokriva z swoosh-om na čevlju).
    2. Spreminjanje glavne slike ob kliku na druge manjše, ter zoom funkcijonalnost ob hover.
