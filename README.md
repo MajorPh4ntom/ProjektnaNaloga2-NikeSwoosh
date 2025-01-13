@@ -23,7 +23,7 @@ Ta naloga predstavlja spletno stran za promocijo in nakup čevljev **Nike Air Fo
 
 **Slika 2 (Body)**
 
-![Posnetek zaslona 2025-01-06 093339](https://github.com/user-attachments/assets/b44b1663-cb5a-4594-a7f4-d465b66e2cd7)
+![Posnetek zaslona 2025-01-13 091439](https://github.com/user-attachments/assets/7cb1cb6b-f5a4-46ff-8d22-ad0ecc014a35)
 
 
 
